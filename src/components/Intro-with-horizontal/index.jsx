@@ -24,11 +24,12 @@ const IntroWithHorizontal = () => {
   }, []);
 
   useEffect(()=>{
-    setInterval(()=>{
+    const interval = setInterval(()=>{
       if( navigationNextRef && navigationNextRef.current) {
         navigationNextRef.current.click();
       }
-    }, 4000)
+    }, 6000)
+    return ()=> clearInterval(interval);
   },[])
 
   const navigationPrevRef = React.useRef(null);

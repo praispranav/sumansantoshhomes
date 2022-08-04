@@ -18,7 +18,7 @@ const Footer = ({ classText }) => {
                 <li>
                   <span className="icon pe-7s-map-marker"></span>
                   <div className="cont">
-                    <h6>Officeal Address</h6>
+                    <h6>Official Address</h6>
                     <p>Suguna Danapur Cantt, Patna. Pin:801503</p>
                   </div>
                 </li>
