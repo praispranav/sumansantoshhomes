@@ -31,7 +31,7 @@ const Contact = () => {
     try{
       if(formik.values.mobile < 1000000000 && formik.values.mobile > 9999999999) return alert("Mobile No should be 10 digit")
       setLoading(true);
-      const result = await axios.post("http://localhost:3001/insert",{ ...formik.values });
+      const result = await axios.post("https://mysterious-temple-98677.herokuapp.com/insert",{ ...formik.values });
       alert(result.data.message);
       formik.handleReset();
       setLoading(false);
